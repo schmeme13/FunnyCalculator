@@ -1,6 +1,12 @@
 ## Getting Started
+  
+This repository contains a simple funny calculator application for expiramentation purposes.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Ideas
+
+- add a working UI
+- maybe create more tabs
+- eventually upgrade to spring? idk
 
 ## Folder Structure
 
