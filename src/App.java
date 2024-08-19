@@ -30,14 +30,12 @@ public class App {
         //Trying out some error handling
         try{
             height = scanner.nextInt();
+            System.out.println("Your height is: " + height + "cm");
         } catch(InputMismatchException e) {
             System.out.println("Enter your height, it's fairly simple");
             //create logic to end the program here, so it doesn't continue to execute the rest of the code
         }
-
-        //Printing the height of the user
-        System.out.println("Your height is: " + height + "cm");
-
+        
         //closing the scanner object
         scanner.close();
     }
