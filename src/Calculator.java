@@ -5,15 +5,20 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import javax.swing.*;
 
-public class App {
+public class Calculator extends JFrame {
     public static void main(String[] args) {
 
         //Creating the User Interface
         JFrame frame = new JFrame();
+        JLabel label = new JLabel("Enter your height in centimeters");
+        JButton button = new JButton("Submit");
         frame.setSize(400,500);
         frame.setTitle("Java Height Calculator");
         frame.setLayout(null);
-        //Needs to be moved to the end and set to true once ready to implement
+        frame.add(label);
+        frame.add(button);
+
+
         frame.setVisible(true);
 
 
@@ -35,7 +40,7 @@ public class App {
             System.out.println("Enter your height, it's fairly simple");
             //create logic to end the program here, so it doesn't continue to execute the rest of the code
         }
-        
+
         //closing the scanner object
         scanner.close();
     }

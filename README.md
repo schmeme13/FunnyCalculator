@@ -1,8 +1,8 @@
 ## Getting Started
   
-This repository contains a simple funny calculator application for expiramentation purposes.
+This repository is a place where I can practice implementing Java code and concepts. So far, it contains the start a simple funny calculator application for expiramentation purposes and a few extraneous classes used to practice common concepts in java.
 
-## Ideas
+## Calculator Ideas
 
 - add a working UI
 - maybe create more tabs
