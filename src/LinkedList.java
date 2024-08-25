@@ -42,6 +42,23 @@ public class LinkedList {
         return true;
     }
 
+    public int valueCount(int data) {
+        int count = 0;
+
+        if(head == null) {
+            return count;
+        }
+
+        Node temp = head;
+        while(temp != null) {
+            if(temp.data == data) {
+                count++;
+            }
+            temp = temp.next;
+        }
+        return count;
+    }
+
     public void print() {
         Node temp = head;
 
