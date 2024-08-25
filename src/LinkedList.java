@@ -17,8 +17,29 @@ public class LinkedList {
             }
             temp.next = node;
         }
+    }
 
+    public boolean remove(int data) {
+        if(head == null) {
+            return false;
+        }
+
+        if(head.data == data) {
+            head = head.next;
+            return true;
+        }
+
+        Node temp = head;
+
+        while(temp.next != null && temp.next.data != data) {
+            temp = temp.next;
+        }
         
+        if(temp.next == null) {
+            return false;
+        }
+        temp.next = temp.next.next;
+        return true;
     }
 
     public void print() {
