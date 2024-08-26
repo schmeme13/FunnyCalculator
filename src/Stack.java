@@ -11,6 +11,12 @@ public class Stack {
         top = node;
     }
 
+    public int pop() {
+        Node node = top;
+        top = top.next;
+        return node.data;
+    }
+
     public void print() {
         Node temp = top;
 
