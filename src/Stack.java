@@ -10,4 +10,13 @@ public class Stack {
         node.next = top;
         top = node;
     }
+
+    public void print() {
+        Node temp = top;
+
+        while(temp != null) {
+            System.out.println(temp.data);
+            temp = temp.next;
+        }
+    }
 }
