@@ -1,14 +1,11 @@
 public class Main {
     public static void main(String args[]) {
-        Stack stack = new Stack();
+        
+        int[] array = {4,7,2,8,3,9,1,6,5};
+        Sorting sort = new Sorting();
 
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-
-        stack.pop();
-
-        stack.print();
+        sort.bubbleSort(array);
+        
     }
 
 }
