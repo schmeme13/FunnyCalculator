@@ -5,7 +5,7 @@ public class Main {
         Sorting sort = new Sorting();
 
         sort.bubbleSort(array);
-        
+        sort.print(array);
     }
 
 }
