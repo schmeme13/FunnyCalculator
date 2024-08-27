@@ -42,7 +42,36 @@ public class Sorting {
         }
     }
 
-    
+    //Worse: O(n^2), Average: O(nlogn), Best: O(nlogn), Space: O(logn) or O(n) if pivot creates unbalanced partitions
+    public void quickSort(int[] array) {
+        quickSort(array, 0, array.length - 1);
+    }
+
+    private void quickSort(int[] array, int low, int high) {
+        if(low >= high) {
+            return;
+        }
+
+        int pivot = array[high];
+        int left = low;
+        int right = high;
+
+        while(left < right) {
+            while(array[left] <= pivot && left < right) {
+                left++;
+            }
+            while(array[right] >= pivot && left < right) {
+                right--;
+            }
+
+            swap(array, left, right);
+        }
+
+        swap(array, left, high);
+
+        quickSort(array, low, left - 1);
+        quickSort(array, left + 1, high);
+    }
 
     private void swap(int[] array, int index1, int index2) {
         int temp = array[index1];
