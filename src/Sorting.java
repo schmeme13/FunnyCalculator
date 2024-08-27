@@ -4,6 +4,8 @@ public class Sorting {
 
     }
 
+    //Worse: O(n^2), Average: O(n^2), Best: O(n), Space: O(1)
+    //Best here is O(n^2) because it's not checking swaps
     public void bubbleSort(int[] array) {
         for(int i = 0; i < array.length; i++) {
             for(int j = 1; j < array.length - i; j++) {
@@ -16,6 +18,7 @@ public class Sorting {
         }
     }
 
+    //Worse: O(n^2), Average: O(n^2), Best: O(n^2), Space: O(1)
     public void selectionSort(int[] array) {
         for(int i = 0; i < array.length - 1; i++) {
             for(int j = i + 1; j < array.length; j++) {
@@ -28,6 +31,7 @@ public class Sorting {
         }
     }
 
+    //Worse: O(n^2), Average: O(n^2), Best: O(n), Space: O(1)
     public void insertionSort(int[] array) {
         for(int i = 1; i < array.length; i++) {
             int key = array[i];
@@ -40,6 +44,11 @@ public class Sorting {
 
             array[j + 1] = key;
         }
+    }
+
+    //Worse: O(n^2), Average: O(nlogn), Best: O(nlogn), Space: O(logn) or O(n) if pivot creates unbalanced partitions
+    public void quickSort(int[] array) {
+
     }
 
     public void print(int[] array) {
