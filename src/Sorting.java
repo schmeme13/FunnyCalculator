@@ -53,6 +53,14 @@ public class Sorting {
         }
 
         int pivot = array[high];
+
+        int left = partition(array, low, high, pivot);
+
+        quickSort(array, low, left - 1);
+        quickSort(array, left + 1, high);
+    }
+
+    private int partition(int[] array, int low, int high, int pivot) {
         int left = low;
         int right = high;
 
@@ -69,8 +77,7 @@ public class Sorting {
 
         swap(array, left, high);
 
-        quickSort(array, low, left - 1);
-        quickSort(array, left + 1, high);
+        return left;
     }
 
     private void swap(int[] array, int index1, int index2) {
