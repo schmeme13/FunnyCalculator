@@ -31,6 +31,13 @@ public class Queue {
         return value;
     }
 
+    public int peek() throws Exception {
+        if(front == null) {
+            throw new Exception("Queue is empty");
+        }
+        return front.data;
+    }
+
     public void print() {
         Node temp = front;
 
