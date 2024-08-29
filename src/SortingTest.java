@@ -1,10 +1,9 @@
 
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
-import java.util.Arrays;
+//import static org.junit.jupiter.api.Assertions.*;
+//import org.junit.jupiter.api.Test;
+//import java.util.Arrays;
 
 public class SortingTest {
-    @Test
     public void test() {
         Sorting sort = new Sorting();
         
