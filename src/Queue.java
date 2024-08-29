@@ -19,6 +19,18 @@ public class Queue {
 		}
     }
 
+    public int dequeue() throws Exception {
+        if(front == null) {
+            throw new Exception("Queue is empty");
+        }
+        int value = front.data;
+        front = front.next;
+        if(front == null) {
+            rear = null;
+        }
+        return value;
+    }
+
     public void print() {
         Node temp = front;
 
